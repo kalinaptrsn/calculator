@@ -13,30 +13,33 @@
 
     <div class="calculator">
 
-        <div class="viewfinder"></div>
+        <div class="calculator-display">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
 
             <div class="buttons-grid">
-            <button class="clear-button">CLEAR</button>
-            <button class="delete-button">DELETE</button>
-            <button class="button">7</button>   
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">÷</button>
+            <button class="span-two" data-clear>CLEAR</button>
+            <button class="span-two" data-delete>DELETE</button>
+            <button class="button" data-number>7</button>   
+            <button class="button" data-number>8</button>
+            <button class="button" data-number>9</button>
+            <button class="button" data-operation>÷</button>
 
-            <button class="button">4</button>   
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">x</button>
+            <button class="button" data-number>4</button>   
+            <button class="button" data-number>5</button>
+            <button class="button" data-number>6</button>
+            <button class="button" data-operation>x</button>
 
-            <button class="button">1</button>   
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">-</button>
+            <button class="button" data-number>1</button>   
+            <button class="button" data-number>2</button>
+            <button class="button" data-number>3</button>
+            <button class="button" data-operation>-</button>
 
-            <button class="button">.</button>   
-            <button class="button">0</button>
-            <button class="button">=</button>
-            <button class="button">+</button>
+            <button class="button" data-number>.</button>   
+            <button class="button" data-number>0</button>
+            <button class="button" data-equals>=</button>
+            <button class="button" data-operation>+</button>
             </div>
 
     </div>
@@ -46,3 +49,43 @@
 </body>
 <script src ="script.js"></script>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=display-width, intial-scale=1.0">
+        <title>Trial</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div data-all-clear class="calculator-grid">
+                <div class="display">
+                    <div data-previous-operand class="previous-operand"></div>
+                    <div data-current-operand class="current-operand"></div>
+                </div>
+                <button data-delete class="span-two">AC</button>
+                <button data-operation="">DEL</button>
+                <button data-operation="">÷</button>
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button>*</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>+</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>-</button>
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-equals class="span-two">=</button>
+            </div>
+        </div>
+    </body>
+    <script src ="script.js"></script>
+</html> -->

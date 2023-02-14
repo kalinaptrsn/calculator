@@ -28,28 +28,28 @@ body {
     background-color: #AAFF99;
 }
 
-.viewfinder {
+.calculator-display {
     padding: 40px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: beige;
     margin-bottom: 20px;
     text-align: right;
+    height: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-.clear-button {
+.span-two {
     grid-column: span 2;
     padding: 20px;
     border-radius: 5px;
     border: 2px solid black;
     background-color: beige;
 }
-.delete-button {
-    grid-column: span 2;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: beige;
+
+.span-two:hover {
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .buttons-grid {
@@ -64,3 +64,68 @@ body {
     border: 2px solid black;
     background-color: beige;
 }
+
+.button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+
+/* *{
+    font-family: Gotham Rounded, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.calculator-grid{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid button{
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: white;
+    opacity: 0.75;
+    outline:none;
+    border: 1px solid white;
+}
+
+.calculator-grid button:hover{
+    background-color: white;
+    opacity: 0.9;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.display{
+    grid-column: 1 / -1;
+    background-color: black;
+    opacity: 0.75;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: flex-end;
+    color: white;
+}
+ 
+.previous-operand{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+}
+
+.current-operand{
+    color: white;
+    font-size: 2rem;
+} */
