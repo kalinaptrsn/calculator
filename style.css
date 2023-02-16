@@ -1,11 +1,15 @@
 html {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 body {
+    display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
+    background-image: linear-gradient(45deg,#AAFF99,white);
 }
 
 * {  
@@ -25,7 +29,7 @@ body {
     padding: 20px;
     border: 2px solid black;
     border-radius: 8px;
-    background-color: #AAFF99;
+    background-color: #2f2015;
 }
 
 .calculator-display {
@@ -66,6 +70,17 @@ body {
 }
 
 .button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.operator {
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #c5986e;
+}
+
+.operator:hover {
     background-color: rgba(255, 255, 255, .9);
 }
 
