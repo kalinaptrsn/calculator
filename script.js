@@ -12,7 +12,7 @@ class Calculator {
     };
 
     delete() {
-
+        this.currentOperand = this.currentOperand.toString().slice(0, -1);
     };
 
     appendNumber(number) {
@@ -23,14 +23,14 @@ class Calculator {
 
     chooseOperation(operation) {
         if (this.currentOperand === '') return;
-        if (this.previousOperand != '') {
+        if (this.previousOperand !== '') {
             this.compute();
-        } else {
+        }
             this.operation = operation;
             this.previousOperand = this.currentOperand;
             this.currentOperand = '';
         }
-    };
+
 
     compute() {
         let computation;
@@ -67,7 +67,7 @@ class Calculator {
             this.previousOperandTextElement.innerText = '';
             }
         }
-    };
+};
 
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
@@ -146,3 +146,5 @@ function operate(operator, a, b) {
         return divide(a,b);
     }
 }
+
+
